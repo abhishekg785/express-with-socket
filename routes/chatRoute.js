@@ -3,7 +3,7 @@ var router = express.Router();
 var checkLogin = require('./checkLogin');
 
 router.get('/',checkLogin,function(req,res){
-  res.end('chat');
+  res.render('chat');
 });
 
 module.exports = router;
